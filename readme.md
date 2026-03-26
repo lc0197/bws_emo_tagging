@@ -1,6 +1,6 @@
 # Training-Free Text Emotion Tagging via LLM-Based Best-Worst Scaling 
 
-This repository contains code for the paper [Training-Free Text Emotion Tagging via LLM-Based Best-Worst Scaling](#). 
+This repository contains code for the paper [Training-Free Text Emotion Tagging via LLM-Based Best-Worst Scaling](https://aclanthology.org/2026.findings-eacl.351/), published in *Findings of the Association for Computational Linguistics: EACL 2026*. 
 
 ## Installation 
 
