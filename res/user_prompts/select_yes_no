@@ -1,0 +1,5 @@
+Please consider the {{ text_type }} and the candidate emotions listed below.
+Emotions: {% for emotion in emotions %}{{ emotion }}{{ ", " if not loop.last else "\n" }}{% endfor %}
+Text: {{ text }}
+Decide for each emotion whether it might be expressed in the {{ text_type }} or not. When in doubt about an emotion, assume that it is expressed.
+Reply by assigning "yes" to emotions that might be expressed in the text, and "no" to emotions that are definitely not expressed.

@@ -1,0 +1,21 @@
+{   "definitions": {
+    "emotion": {
+        "type": "string",
+        "enum": ["admiration", "amusement", "anger", "annoyance", "approval", "caring", "confusion", 
+        "curiosity", "desire", "disappointment", "disapproval", "disgust", "embarrassment", "excitement", 
+        "fear", "gratitude", "grief", "joy", "love", "nervousness", "neutral", "optimism", "pride", 
+        "realization", "relief", "remorse", "sadness", "surprise"]
+        }
+    },
+    "type": "array",
+    "minItems": 28,
+    "maxItems": 28,
+    "uniqueItems": true,
+    "items": {
+      "type": "object",
+        "properties": {
+        "emotion": {"$ref": "#/definitions/emotion"},
+        "score": {"type": "float"}
+        },
+    "required": ["emotion", "score"]}
+}

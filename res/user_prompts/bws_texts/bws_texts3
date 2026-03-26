@@ -1,0 +1,8 @@
+Please consider the emotion {{ emotion }} and  {{ text_type }}s given below.
+Which of the three texts' authors is likely to feel {{ emotion }} the MOST and which of the four authors is likely to feel {{ emotion }} the LEAST?
+Texts: 
+A) {{ texts[0] }}
+B) {{ texts[1] }}
+C) {{ texts[2] }}
+Which of the three texts' authors is likely to feel {{ emotion }} the MOST and which of the three authors is likely to feel {{ emotion }} the LEAST?
+Only return the identifier (A, B, or C) of the texts that express {{ emotion }} the most and least, respectively.

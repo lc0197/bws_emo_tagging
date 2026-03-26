@@ -1,0 +1,8 @@
+{"$defs": {
+    "emo": {
+        "enum": ["anger", "happy", "sad"], 
+        "title":"test",
+        "type":"string"
+        }
+        }
+    }

@@ -1,0 +1,7 @@
+Please consider the emotions listed below.
+Emotions: {% for emotion in emotions %}{{ emotion }}{{ ", " if not loop.last else "\n" }}{% endfor %}
+For each of the given emotions, give estimates for its corresponding representation in the valence/arousal/dominance space.
+Return three numeric values between 0 and 1, corresponding to the emotion's degree of valence, arousal, and dominance. 
+A value of zero denotes very low valence/arousal/dominance, while a value of one denotes very high valence/arousal/dominance.
+Round to the format of two decimal places. 
+Only reply with the triple of numbers for each emotion.

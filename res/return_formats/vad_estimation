@@ -1,0 +1,20 @@
+{   "definitions": {
+    "emotion": {
+        "type": "string",
+        "enum": [{% for emotion in emotions %}"{{ emotion }}"{{ ", " if not loop.last else "\n" }}{% endfor %}]
+        }
+    },
+    "type": "array",
+    "minItems": 28,
+    "maxItems": 28,
+    "uniqueItems": true,
+    "items": {
+      "type": "object",
+        "properties": {
+        "emotion": {"$ref": "#/definitions/emotion"},
+        "valence": {"type": "number"},
+        "arousal": {"type": "number"},
+        "dominance": {"type": "number"}
+        },
+    "required": ["emotion", "valence", "arousal", "dominance"]}
+}

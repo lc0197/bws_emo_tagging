@@ -1,0 +1,13 @@
+{   "definitions": {
+    "choice": {
+        "type": "string",
+        "enum": ["A", "B", "C", "D", "E"]
+        }
+    },
+    "type": "object",
+    "properties": {
+        "most": {"$ref": "#/definitions/choice"},
+        "least": {"$ref": "#/definitions/choice"}
+        },
+    "required": ["most", "least"]
+}

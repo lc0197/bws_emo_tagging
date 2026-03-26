@@ -1,0 +1,13 @@
+{   "definitions": {
+    "emotion": {
+        "type": "string",
+        "enum": [{% for emotion in emotions %}"{{ emotion }}"{{ ", " if not loop.last else "\n" }}{% endfor %}]
+        }
+    },
+    "type": "object",
+    "properties": {
+        "most": {"$ref": "#/definitions/emotion"},
+        "least": {"$ref": "#/definitions/emotion"}
+    },
+    "required": ["most", "least"]
+}

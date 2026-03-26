@@ -1,0 +1,6 @@
+Please consider the $TEXT_TYPE and the candidate emotions listed below.
+Emotions: $EMOTIONS_LIST
+Text: $TEXT
+For each of the given emotions, estimate the probability that the author of the $TEXT_TYPE felt this emotion. 
+Reply with an integer between 0 and 100, where 0 means that the author did not feel the emotion at all, and 100 means that the author definitely felt the emotion. 
+Only return the integer estimate.
